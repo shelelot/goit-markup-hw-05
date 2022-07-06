@@ -56,7 +56,7 @@
 			<section class="section-hero">
 				<div class="container hero">
 					<h1 class="text-hero">Эффективные решения для вашего бизнеса</h1>
-					<button type="button" class="button-one">Заказать услугу</button>
+					<button type="button" class="button-one" data-modal-open>Заказать услугу</button>
 				</div>
 			</section>
 			<!-- Секція Features-->
@@ -114,24 +114,24 @@
 				<div class="container work">
 					<h2 class="section-title">Чем мы занимаемся</h2>
 					<div class="photo-work">
-						<img
-							src="./images/images-2/img.jpg"
-							alt="Процес набирання програмного коду на клавіатурі"
-							width="370"
-							height="294"
-						/>
-						<img
-							src="./images/images-2/img-2.jpg"
-							alt="Налаштування синхронізації пристроїв"
-							width="370"
-							height="294"
-						/>
-						<img
-							src="./images/images-2/img-3.jpg"
-							alt="На планшеті зображена кольорова палітра"
-							width="370"
-							height="294"
-						/>
+						<div class="photo-overlay">
+							<img class="examples-photo" src="./images/images-2/img.jpg" alt="Процес набирання програмного коду на клавіатурі" width="370" height="294" />
+							<div class="examples-photo-overlay">
+								<p class="examples-photo-text">Десктопные приложения</p>
+							</div>
+						</div>
+						<div class="photo-overlay">
+							<img src="./images/images-2/img-2.jpg" alt="Налаштування синхронізації пристроїв" width="370" height="294" />
+							<div class="examples-photo-overlay">
+								<p class="examples-photo-text">Мобильные приложения</p>
+							</div>
+						</div>
+						<div class="photo-overlay">
+							<img src="./images/images-2/img-3.jpg" alt="На планшеті зображена кольорова палітра" width="370" height="294" />
+							<div class="examples-photo-overlay">
+								<p class="examples-photo-text">Дизайнерские решения</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -497,5 +497,17 @@
         </div>
 			</div>
 		</footer>
+		<div class="backdrop is-hidden" data-modal>
+			<div class="modal">
+				<button class="modal-button" data-modal-close>
+					<svg class="close-button" width="11" height="11">
+						<use href="../goit-markup-hw-05/images/modal/Vector.svg"></use>
+					</svg>
+				</button>
+			</div>
+
+		</div>
+
+		<script src="./js/modal.js"></script>
 	</body>
 </html>
