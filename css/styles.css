@@ -220,10 +220,13 @@ header {
 	cursor: pointer;
 }
 .close-button {
-	display: flex;
+	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	fill: #000;
+	width: 11px;
+	height: 11px;
+	background-image: url(../images/modal/Vector.svg);
+	background-repeat: no-repeat;
 }
 /* Features */
 .section-features {
